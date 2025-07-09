@@ -8,6 +8,12 @@ app = FastAPI()
 
 logging.basicConfig(level=logging.INFO)
 
+# The FastAPI app has been moved to api/index.py for Vercel deployment.
+# Please use that file as the entry point for the API.
+
+if __name__ == "__main__":
+    print("The FastAPI app is now located in api/index.py for Vercel deployment. Run and deploy from there.")
+
 @app.get("/")
 def read_root():
     """
